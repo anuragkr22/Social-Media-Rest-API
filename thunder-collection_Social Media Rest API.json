@@ -1,0 +1,233 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Social Media Rest API",
+    "dateExported": "2023-07-03T15:42:38.456Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-07-01T08:27:16.085Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "037991df-cf54-431b-87fa-8ec85941592e",
+            "name": "posts",
+            "containerId": "",
+            "created": "2023-07-03T13:53:45.804Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "b690f759-3c56-41ef-ae04-0efd61c00669",
+            "name": "login",
+            "containerId": "",
+            "created": "2023-07-03T15:04:31.874Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a7e808bf-98fe-4f88-9eda-ca019588ec00",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "retrieveAllUsers",
+            "url": "http://localhost:8080/jpa/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-01T08:27:34.816Z",
+            "modified": "2023-07-03T15:10:57.688Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/xml",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a73da47-affb-4d99-9f36-37615649a247",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "retrieveUser",
+            "url": "http://localhost:8080/jpa/users/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-01T08:35:58.608Z",
+            "modified": "2023-07-03T15:11:03.926Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ace24d59-dfcc-4f73-9e8f-c6377639b2b6",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "createUser",
+            "url": "http://localhost:8080/jpa/users",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-01T08:50:55.601Z",
+            "modified": "2023-07-03T15:11:21.910Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Chroma\",\n  \"birthDate\": \"2000-05-01\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "1abb6f68-bc64-4c92-af1d-85c7dd9bfdea",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "deleteUser",
+            "url": "http://localhost:8080/jpa/users/2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-01T14:44:51.691Z",
+            "modified": "2023-07-03T15:12:25.032Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "961b31f7-95f8-41bd-a80d-4f3e5210ec27",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "08a5673a-036b-4e63-b372-badd0293b78b",
+            "name": "good morning message i18n",
+            "url": "http://localhost:8080/person/accept",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-02T14:14:27.351Z",
+            "modified": "2023-07-02T14:45:30.746Z",
+            "headers": [
+                {
+                    "name": "Accept-Language",
+                    "value": "de",
+                    "isDisabled": true
+                },
+                {
+                    "name": "api-version",
+                    "value": "3",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/example.app-v2+json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "11f115ba-8e15-40e4-9136-bec0e97e0adc",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "037991df-cf54-431b-87fa-8ec85941592e",
+            "name": "retrievePostForUser",
+            "url": "http://localhost:8080/jpa/users/1/posts",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-07-03T13:53:59.840Z",
+            "modified": "2023-07-03T15:12:33.143Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d759dea-6dda-466c-aaa1-627f28b2d567",
+            "colId": "c4d1f8c8-461d-4dd5-bb03-7a94968d4c2a",
+            "containerId": "037991df-cf54-431b-87fa-8ec85941592e",
+            "name": "createPostForUser",
+            "url": "http://localhost:8080/jpa/users/1/posts",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-03T14:03:44.854Z",
+            "modified": "2023-07-03T15:12:52.009Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"description\": \"I am going to Mumbai 1234\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "password"
+                }
+            },
+            "tests": []
+        }
+    ]
+}
